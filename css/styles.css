@@ -11540,8 +11540,8 @@ footer a:hover, footer a:active, footer a:focus {
 
 .masthead {
   background-color: #f8f9fa;
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
+  padding-top: 6.5rem;
+  padding-bottom: 0rem;
 }
 .masthead .masthead-device-mockup {
   display: flex;
@@ -11626,4 +11626,54 @@ footer a:hover, footer a:active, footer a:focus {
 .no-padding {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .bg-icon-01 {
+    background: url(../assets/img/bg-01.png);
+    background-size:cover;
+  }
+
+  .bg-icon-02 {
+    background: url(../assets/img/bg-02.png);
+    background-size:cover;
+  }
+
+  .bg-icon-03 {
+    background: url(../assets/img/bg-03.png);
+    background-size:cover;
+  }
+}
+
+@media (max-width: 992px) {
+  aside, section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lead { font-size: 1rem; text-align: justify; }
+}
+
+.thumb-youtube { 
+  height: auto;
+	max-width: 100%;
+}
+
+iframe {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
+
+.youtube {
+  position: relative;
+  display: inline-block;
+}
+.youtube:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: transparent url(../assets/img/play-youtube-icon.png) center center no-repeat;
 }
