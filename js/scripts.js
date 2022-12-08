@@ -51,7 +51,7 @@ for (let video of videos) {
 
 	// Add a thumbnail
 	video.innerHTML =
-		`<img class="thumb-youtube" alt="" src="https://img.youtube.com/vi/${id}/maxresdefault.jpg"><br>
+		`<img class="thumb-youtube" alt="" src="https://img.youtube.com/vi/${id}/sddefault.jpg"><br>
 		${video.textContent}`;
 
 }
